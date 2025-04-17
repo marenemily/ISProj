@@ -1,0 +1,60 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color:floralwhite;
+    color: #333;
+}
+
+/* Title styling */
+h1 {
+    color: darkred;
+    text-align: center;
+}
+
+/* Link styling */
+a {
+    color: navy;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Divs for layout */
+.div1 {
+    background-color: #f2cdd8;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.div2 {
+    background-color: #e7f6f8;
+    padding: 20px;
+    margin: 10px;
+   text-align: center;
+}
+
+.div3 {
+    background-color: #e8f5e9;
+    padding: 20px;
+    margin: 10px;
+    border-left: 6px solid #2e7d32;
+}
+
+.div4 {
+    background-color: #f9f4cb;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.div5{
+    background-color:rgb(217, 186, 246);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    
+}

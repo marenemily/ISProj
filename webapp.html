@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Joke Generator</title>
+  <style>
+    body {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      background-color: #fdf0bd;
+      color: #333;
+      text-align: center;
+      padding: 50px;
+    }
+
+h1{
+    color: #f59e0b;
+}
+
+    #joke-box {
+      background-color: hsl(35, 94%, 94%);
+      border: 2px dashed #f59e0b;
+      padding: 30px;
+      border-radius: 12px;
+      margin: 20px auto;
+      width: 60%;
+      font-size: 1.5rem;
+      min-height: 150px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #fed530;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background-color: #f59e0b;
+    }
+  </style>
+</head>
+<body>
+
+  <h1> Joke Generator </h1>
+
+  <div id="joke-box">
+    Click the button to see a random joke!
+  </div>
+
+  <button onclick="tellJoke()">Tell Me a Joke</button>
+
+  <script>
+    const jokes = [
+      "Why don't skeletons fight each other? They don't have the guts.",
+      "I'm reading a book on anti-gravity. It's impossible to put down!",
+      "What do you call fake spaghetti? An impasta!",
+      "Why did the scarecrow win an award? Because he was outstanding in his field.",
+      "Parallel lines have so much in common. It’s a shame they’ll never meet.",
+      "Why don’t scientists trust atoms? Because they make up everything.",
+      "What did the fish say when it hit the wall? Dam.",
+      "I would tell you a construction joke… but I’m still working on it.",
+      "Why did the coffee file a police report? It got mugged.",
+      "Why don’t some couples go to the gym? Because some relationships don’t work out.",
+      "Did you hear about the cheese factory that exploded in France? There was nothing left but de-brie.",
+      "How does a penguin build its house? Igloos it together.",
+      "I'm on a seafood diet. I see food and I eat it.",
+      "Why can’t your nose be 12 inches long? Because then it would be a foot.",
+      "Why was the math book sad? It had too many problems."
+    ];
+
+    function tellJoke() {
+      const jokeBox = document.getElementById("joke-box");
+      const randomIndex = Math.floor(Math.random() * jokes.length);
+      jokeBox.textContent = jokes[randomIndex];
+    }
+  </script>
+
+</body>
+</html>
+  
